@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar-inverse" style="position: sticky;top: 0;z-index: 99999">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://unsplash.com/s/photos/marvel"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#grids">Grid View</a></li>
+                <li><a href="#slides">Slide View</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <div class="page-header">
+                <img id="img1" src="https://64.media.tumblr.com/6b909387bb9a6bb23e7b6d8d1dbe1294/tumblr_mxn0f9oAfR1t0xz7jo1_r1_500.gif" class="img-responsive">
+            </div>
+        </section>
+        <hr style="width: 100%">
+        <section id="grids">
+            <h2> Grid gallery</h2>
+            <div class="row">
+                <img class="img2" src="https://www.gannett-cdn.com/presto/2020/05/27/USAT/cad1b1bb-6924-49c5-bfe0-848d424045fb-XXX_IMG_XXX_IMG_CAPTAIN_AMER_4_1_N9HVDDLQ_1.JPG?crop=3102,2327,x0,y0&quality=50&width=640">
+                <img class="img2" src="https://cdn.britannica.com/36/198336-050-A9B8AA86/Chadwick-Boseman-Tchalla-Black-Panther-Black.jpg">
+                <img class="img2" src="https://i.cdn.newsbytesapp.com/images/l110_11991580378536.jpg">
+                <img class="img2" src="https://venturebeat.com/wp-content/uploads/2018/09/ironman.jpg?fit=1920%2C1376&strip=all">
+            </div>
+
+
+            <div class="row">
+                <img class="img2" src="https://img.theweek.in/content/dam/week/news/entertainment/images/2019/4/26/thanos-avengers-infinity.jpg">
+                <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS5H7aJH1MmWAsVT083C5Jf33iIQEPb0PasgL8j1lGwtQV_xPDBOIEmGfe2riecOWoC5E&usqp=CAU">
+                <img class="img2" src="https://1.bp.blogspot.com/-jtY3aVbiKMY/YEuCYmEuu7I/AAAAAAAAeEs/8Xn5OxqlMPsL4HEsACyggarWp6rmCyNzQCPcBGAYYCw/s0/hot-toys-scarlet-witch.png">
+                <img class="img2" src="https://www.denofgeek.com/wp-content/uploads/2019/11/Gamora_Guardians_of_the_Galaxy.jpg?fit=1200%2C675">
+            </div>
+        </section>
+
+        <br><br>
+        <hr style="width: 100%">
+        <section id="slides">
+            <h2> Sliding Gallery</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="img-responsive" src="https://www.gannett-cdn.com/presto/2020/05/27/USAT/cad1b1bb-6924-49c5-bfe0-848d424045fb-XXX_IMG_XXX_IMG_CAPTAIN_AMER_4_1_N9HVDDLQ_1.JPG?crop=3102,2327,x0,y0&quality=50&width=640" alt="Captain America" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Captain America</h3>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="https://cdn.britannica.com/36/198336-050-A9B8AA86/Chadwick-Boseman-Tchalla-Black-Panther-Black.jpg" alt="Black Panther" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Black Panther</h3>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="https://i.cdn.newsbytesapp.com/images/l110_11991580378536.jpg" alt="Hulk" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Hulk</h3>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="https://venturebeat.com/wp-content/uploads/2018/09/ironman.jpg?fit=1920%2C1376&strip=all" alt="Iron Man" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Iron Man</h3>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="https://img.theweek.in/content/dam/week/news/entertainment/images/2019/4/26/thanos-avengers-infinity.jpg" alt="Thanos" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Thanos</h3>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS5H7aJH1MmWAsVT083C5Jf33iIQEPb0PasgL8j1lGwtQV_xPDBOIEmGfe2riecOWoC5E&usqp=CAU" alt="Thor" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Thor</h3>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="https://www.denofgeek.com/wp-content/uploads/2019/11/Gamora_Guardians_of_the_Galaxy.jpg?fit=1200%2C675" alt="Gamora" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Gamora</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <img class="img-responsive" src="https://1.bp.blogspot.com/-jtY3aVbiKMY/YEuCYmEuu7I/AAAAAAAAeEs/8Xn5OxqlMPsL4HEsACyggarWp6rmCyNzQCPcBGAYYCw/s0/hot-toys-scarlet-witch.png" alt="Scarlett Witch" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Scarlett Witch</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+
+        </section>
+    </div>
+
+</body></html>
